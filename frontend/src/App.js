@@ -50,11 +50,11 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <div className="todo-container">
-        <div className="app-header">
-          <h1>Todo App</h1>
-          <p>Keep track of your tasks easily</p>
+    <div className="min-h-screen bg-background py-8 px-4">
+      <div className="max-w-md mx-auto">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold text-foreground">Todo App</h1>
+          <p className="text-muted-foreground mt-2">Keep track of your tasks easily</p>
         </div>
         <TodoForm addTodo={addTodo} />
         <TodoList 
